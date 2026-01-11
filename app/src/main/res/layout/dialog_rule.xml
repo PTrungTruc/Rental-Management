@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <TextView
+            android:id="@+id/txtmsg"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginHorizontal="40dp"
+            android:text="Một số quy định như sau: \n+ Không tùy tiện dùng đồ của người khác, đảm bảo tính riêng tư. \n+ Tránh dẫn ạn khác giới về phòng tiệc tùng hoặc ở lại. \n+ Không sinh hoạt ầm ĩ trong phòng, tránh ảnh hưởng bạn cùng phòng. \n+ Thời gian tắt đèn buổi tối, tránh ồn ào vào buổi tối. \n+ Phân chia thời gian vệ sinh, dọn dẹp phòng ốc."
+            android:textColor="@color/black" />
+
+    </LinearLayout>
+</ScrollView>

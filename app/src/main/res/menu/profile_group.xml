@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/miProfile"
+        android:title="Profile"
+        app:showAsAction="collapseActionView"/>
+    <item
+        android:id="@+id/miEvent"
+        android:title="Event"
+        app:showAsAction="collapseActionView"/>
+    <item
+        android:id="@+id/miPayment"
+        android:title="Payment"
+        app:showAsAction="collapseActionView" />
+</menu>

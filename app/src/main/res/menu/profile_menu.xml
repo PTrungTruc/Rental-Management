@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/miGroup"
+        android:title="Group"
+        app:showAsAction="collapseActionView"/>
+    <item
+        android:id="@+id/miChat"
+        android:title="Chat"
+        app:showAsAction="collapseActionView"/>
+    <item
+        android:id="@+id/miReward"
+        android:title="Reward"
+        app:showAsAction="collapseActionView"/>
+    <item
+        android:id="@+id/miLogout"
+        android:title="Logout"
+        app:showAsAction="collapseActionView"/>
+</menu>

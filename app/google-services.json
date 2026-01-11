@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "376064133522",
+    "project_id": "rental-management-1e4b8",
+    "storage_bucket": "rental-management-1e4b8.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:376064133522:android:42aeb85a75fbf8bbaa594b",
+        "android_client_info": {
+          "package_name": "com.example.rental_management"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "YourKey"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

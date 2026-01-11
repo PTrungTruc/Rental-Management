@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="true"/>
+    <uses-feature
+        android:name="android.hardware.telephony"
+        android:required="true"/>
+
+    <uses-permission android:name="android.permission.CAMERA"/>
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+    <uses-permission android:name="android.permission.SCHEDULE_EXACT_ALARM" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.SEND_SMS" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.MANAGE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Rental_Management">
+
+        <activity
+            android:name=".views.EditEventActivity"
+            android:exported="false" />
+        <activity
+            android:name=".views.NewEventActivity"
+            android:exported="false" />
+        <service
+            android:name=".others.AlarmService"
+            android:enabled="true"
+            android:exported="true" />
+        <receiver
+            android:name=".others.ServiceAutoLauncher"
+            android:enabled="true"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+                <category android:name="android.intent.category.HOME" />
+            </intent-filter>
+        </receiver>
+
+        <activity
+            android:name=".views.MainActivityCalendar"
+            android:exported="true">
+        </activity>
+        <activity
+            android:name=".views.ActivityChat"
+            android:exported="true">
+        </activity>
+        <activity
+            android:name=".views.ActivityReward"
+            android:exported="false" />
+        <activity
+            android:name=".views.PaymentActivity"
+            android:exported="false" />
+        <activity
+            android:name=".views.AccountProfile"
+            android:exported="false" />
+        <activity
+            android:name=".views.Rating"
+            android:exported="false" />
+        <activity
+            android:name=".views.CreateNewGroup"
+            android:exported="false" />
+        <activity
+            android:name=".views.ChatBox"
+            android:exported="false" />
+        <activity
+            android:name=".views.GroupProfile"
+            android:exported="false" />
+        <activity
+            android:name=".views.MainActivityGroup"
+            android:exported="false" />
+        <activity
+            android:name=".views.Profile"
+            android:exported="false" />
+        <activity
+            android:name=".views.Register"
+            android:exported="false"
+            android:parentActivityName=".views.Login"
+            android:label="Register"/>
+        <activity
+            android:name=".views.Login"
+            android:exported="true">
+<!--            <intent-filter>-->
+<!--                <action android:name="android.intent.action.MAIN" />-->
+
+<!--                <category android:name="android.intent.category.LAUNCHER" />-->
+<!--            </intent-filter>-->
+        </activity>
+
+        <activity
+            android:name=".views.LoadingActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

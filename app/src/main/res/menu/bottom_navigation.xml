@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/BottomNavigation_Item_Calendar"
+        android:icon="@drawable/baseline_event_24"
+        android:title="Calendar" />
+    <item
+        android:id="@+id/BottomNavigation_Item_UpcomingEvents"
+        android:icon="@drawable/baseline_event_available_24"
+        android:title="Upcoming events" />
+<!--    <item-->
+<!--        android:id="@+id/BottomNavigation_Item_Settings"-->
+<!--        android:icon="@drawable/baseline_person_24"-->
+<!--        android:title="User Settings" />-->
+</menu>
